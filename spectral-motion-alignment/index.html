@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Spectral Motion Alignment</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <h1 class="xtitle is-1 publication-title" style="font-size: 31px;"><strong>VMC</strong></h1><br> -->
+            <h2 class="xtitle is-1 publication-title" style="font-size: 2.8rem;">
+              <font color="Crimson">Spectral</font>
+              <font color="FireBrick">Motion</font>
+              <font color="DarkRed">Alignment</font> for <br>Video Motion Transfer using Diffusion Models
+            </h2><br>
+            <div class="is-size-5 publication-authors">
+            </div>
+            <!-- Institution & Conference -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a>Geon Yeong Park</a><small><sup>*</sup></small></span>
+              <span class="author-block"><a>Hyeonho Jeong</a><small><sup>*</sup></small></span>
+              <span class="author-block"><a href="https://aibrain.kaist.ac.kr/sang-wan-lee" target="_blank">Sang Wan Lee</a><sup>&#8224;</sup></span>
+              <span class="author-block"><a href="https://bispl.weebly.com/professor.html" target="_blank">Jong Chul Ye</a><sup>&#8224;</sup></span><br>
+              <span class="eql-cntrb"><small><sup>*</sup> Indicates Equal Contribution</small>&emsp;</span>
+              <span class="eql-cntrb"><small><sup>&#8224;</sup> Indicates Corresponding Authors</small></span><br>
+              <span class="eql-cntrb">KAIST</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/Ground-A-Video/Ground-A-Video" target="_blank" class="external-link ">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- <span class="link-block">
+                  <a href="https://drive.google.com/drive/folders/1L4dIqeK52lGBuxIKAEUzZgOEP95dz7AC?usp=drive_link" target="_blank" class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-image"></i>
+                    </span>
+                    <span>Input Video (png)</span>
+                  </a>
+                </span>
+
+
+                <span class="link-block">
+                  <a href="https://drive.google.com/drive/folders/1GUDnosOkYQ50-1bHHIBitRMeamkd2qao?usp=drive_link" target="_blank" class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-video"></i>
+                    </span>
+                    <span>Input Video (gif)</span>
+                  </a>
+                </span> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="hero teaser">
+<div class="is-max-desktop">
+
+<div id="results" style='background-color: rgb(255, 255, 255)'>
+  <h2 class="tldr" style="font-size: 20px;">Spectral Motion Alignment significantly facilitates the capture of long-range and complex motion patterns within videos</h2>
+  <div>
+    <table style="width: 62%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <img src="static/gifs/long/penguins_swimming2/input.gif" width="400">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M<sub>1</sub></i>
+              </div>
+          </th>
+          <th>&nbsp;</th>
+          <th>
+            <img src="static/gifs/long/penguins_swimming2/shark.gif" width="400">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Shark + <i style="font-family: sans-serif; font-weight: bold;">M<sub>1</sub></i> + Under Water
+            </div>
+          </th>
+          <th>
+            <img src="static/gifs/long/penguins_swimming2/spaceship_space.gif" width="400">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Spaceship + <i style="font-family: sans-serif; font-weight: bold;">M<sub>1</sub></i> + In Space
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 62%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <img src="static/gifs/demo/man_skate/input.gif" width="400">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M<sub>2</sub></i>
+              </div>
+          </th>
+          <th>&nbsp;</th>
+          <th>
+            <img src="static/gifs/demo/man_skate/bear.gif" width="400">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Bear + <i style="font-family: sans-serif; font-weight: bold;">M<sub>2</sub></i>
+            </div>
+          </th>
+          <th>
+            <img src="static/gifs/demo/man_skate/astronaut_snow.gif" width="400">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Astrounaut + <i style="font-family: sans-serif; font-weight: bold;">M<sub>2</sub></i> + On Snow
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+<section class="section hero is-light" style='background-color: rgb(250, 250, 255);'>
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered" >
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 17px;">
+            The evolution of diffusion models has greatly impacted video generation and understanding. 
+            Particularly, text-to-video diffusion models have significantly facilitated the customization of input video with target appearance, motion, etc. 
+            Despite these advances, challenges persist in accurately distilling motion information from video frames. 
+            While existing works leverage the consecutive frame residual as the target motion vector, 
+            they inherently lack global motion context and are vulnerable to frame-wise distortions. 
+            To address this, here we present <font color="Crimson">Spectral</font> <font color="FireBrick">Motion</font> <font color="DarkRed">Alignment</font>
+             (<font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>), 
+            a novel framework that refines and aligns motion vectors using <i>Fourier and wavelet transforms</i>. 
+            SMA learns motion patterns by incorporating frequency-domain regularization, facilitating the learning of whole-frame global motion dynamics, and mitigating spatial artifacts.
+            Extensive experiments demonstrate SMA's efficacy in improving motion transfer 
+            while maintaining computational efficiency and compatibility across various video customization frameworks. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <br><br>
+      <h2 class="title is-3">Overview</h2>
+      <img class="center-img center" src="static/images/SMA_model.png" width="100%">
+      <br><br>
+      <h3 class="subtitle" style="font-size: 17px;">
+        <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font> framework distills the motion information in frequency-domain. 
+        Considering the (latent) frame residuals as motion vectors, we first derive the denoised motion vector estimates. 
+        Then, the motion vector $\delta v_0^n$ and its estimate $\delta \hat{v}_0^n$ are aligned in both pixel-domain and frequency-domain. 
+        Our regularization includes (1) global motion alignment based on 1D wavelet-transform, and (2) local motion refinement based on 2D Fourier transform.
+      </h3>
+    </div>
+  </div>
+</section>
+
+
+<div id="results" style='background-color: rgb(250, 250, 255)'>
+  <br><br>
+  <h2 class="tldr" style="font-size: 28px;">1. Comparison within MotionDirector</h2>
+  <!-- <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3> -->
+  <div>
+    <!-- <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2> -->
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/motiondirector/seagull_walking/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              MotionDirector with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+            </div>
+            <img src="static/gifs/motiondirector/seagull_walking/with/chicken.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Chicken + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              MotionDirector
+              </div>
+            <img src="static/gifs/motiondirector/seagull_walking/without/chicken.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Chicken + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>          
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>        
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp; <br> &nbsp;
+              </div>
+            <img src="static/gifs/motiondirector/seagull_skyline/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> MotionDirector with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/motiondirector/seagull_skyline/with/eagle.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Eagle + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On Edge
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> MotionDirector
+              </div>
+            <img src="static/gifs/motiondirector/seagull_skyline/without/eagle.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Eagle + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On Edge
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>        
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp; <br> &nbsp;
+              </div>
+            <img src="static/gifs/motiondirector/sharks_moving/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> MotionDirector with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/motiondirector/sharks_moving/with/goldfish.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Goldfish + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> MotionDirector
+              </div>
+            <img src="static/gifs/motiondirector/sharks_moving/without/goldfish.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Goldfish + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+        </tr>
+        
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp; <br> &nbsp;
+            </div>
+            
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> MotionDirector with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/motiondirector/sharks_moving/with/airplane_sky.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Airplanes + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In the sky
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> MotionDirector
+              </div>
+            <img src="static/gifs/motiondirector/sharks_moving/without/airplane_sky.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Airplanes + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In the sky
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/motiondirector/tank/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              MotionDirector with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/motiondirector/tank/with/tank_desert.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Tank + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Desert
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              MotionDirector
+              </div>
+            <img src="static/gifs/motiondirector/tank/without/tank_desert.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Tank + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Desert
+            </div>
+          </th>          
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+<div id="results" style='background-color: rgb(255, 255, 255)'>
+  <br><br>
+  <h2 class="tldr" style="font-size: 28px;">2. Comparison within VMC (on Show-1)</h2>
+  <div>
+    <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_show1/cars_bridge1/input.gif" width="360">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_show1/cars_bridge1/with/tank_desert.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Tanks + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Desert
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_show1/cars_bridge1/without/tank_desert.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Tanks + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Desert
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+            </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_show1/cars_bridge1/with/turtle.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Turtles + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On The Sand
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC
+              </div>
+            <img src="static/gifs/vmc_show1/cars_bridge1/without/turtle.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Turtles + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On The Sand
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_show1/rabbit_strawberry/input.gif" width="360">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_show1/rabbit_strawberry/with/raccoon_nuts.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Raccoon + <i style="font-family: sans-serif; font-weight: bold;">M</i> + Nuts
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_show1/rabbit_strawberry/without/raccoon_nuts.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Raccoon + <i style="font-family: sans-serif; font-weight: bold;">M</i> + Nuts
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+            </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_show1/rabbit_strawberry/with/squirrel_cherry.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Squirrel + <i style="font-family: sans-serif; font-weight: bold;">M</i> + Cherries
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC
+              </div>
+            <img src="static/gifs/vmc_show1/rabbit_strawberry/without/squirrel_cherry.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Squirrel + <i style="font-family: sans-serif; font-weight: bold;">M</i> + Cherries
+            </div>
+          </th>
+
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/demo/man_skate/input.gif" width="360">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/demo/man_skate/bear.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Bear + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_show1/man_skate/without/bear.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Bear + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+            </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/demo/man_skate/astronaut_snow.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Astronaut + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On Snow
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC
+              </div>
+            <img src="static/gifs/vmc_show1/man_skate/without/astronaut_snow.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Astronaut + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On Snow
+            </div>
+          </th>
+
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_show1/penguins_swimming1/input.gif" width="360">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_show1/penguins_swimming1/with/spaceships_space.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Spaceships + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Space
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_show1/penguins_swimming1/without/spaceships_space.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Spaceships + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Space
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_show1/butterfly/input.gif" width="360">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_show1/butterfly/with/snow.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Butterfly + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Snow
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_show1/butterfly/without/snow.gif" width="360">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Butterfly + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Snow
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+<div id="results" style='background-color: rgb(250, 250, 255)'>
+  <br><br>
+  <h2 class="tldr" style="font-size: 28px;">3. Comparison within VMC (on Zeroscope)</h2>
+  <!-- <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3> -->
+  <div>
+    <!-- <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2> -->
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_zeroscope/car_forest/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_zeroscope/car_forest/with/tank_snow.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Tank + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Snow
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_zeroscope/car_forest/without/tank_snow.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Tank + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Snow
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+            </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_zeroscope/car_forest/with/lamborghini_desert.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Lamborghini + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Desert
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> VMC
+              </div>
+            <img src="static/gifs/vmc_zeroscope/car_forest/without/lamborghini_desert.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Lamborghini + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Desert
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_zeroscope/skiing/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_zeroscope/skiing/with/ironman.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Iron Man + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_zeroscope/skiing/without/ironman.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Iron Man + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+            </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br>VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_zeroscope/skiing/with/batman.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Batman + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br>VMC
+              </div>
+            <img src="static/gifs/vmc_zeroscope/skiing/without/batman.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Batman + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/vmc_zeroscope/bird_forest/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/vmc_zeroscope/bird_forest/with/eagle_winter.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Eagle + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Winter Forest
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC
+              </div>
+            <img src="static/gifs/vmc_zeroscope/bird_forest/without/eagle_winter.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Eagle + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In Winter Forest
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+<div id="results" style='background-color: rgb(255, 255, 255)'>
+  <br><br>
+  <h2 class="tldr" style="font-size: 28px;">4. Comparison within Tune-A-Video</h2>
+  <!-- <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3> -->
+  <div>
+    <!-- <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2> -->
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/tuneavideo/child_bike/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/tuneavideo/child_bike/with/monkey_water.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Monkey + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On The Water
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video
+              </div>
+            <img src="static/gifs/tuneavideo/child_bike/without/monkey_water.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Monkey + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On The Water
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp; <br> &nbsp;
+            </div>
+          </th>
+
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> Tune-A-Video with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/tuneavideo/child_bike/with/lego_snow.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Lego Child + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On Snow
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <br> Tune-A-Video
+              </div>
+            <img src="static/gifs/tuneavideo/child_bike/without/lego_snow.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Lego Child + <i style="font-family: sans-serif; font-weight: bold;">M</i> + On Snow
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/tuneavideo/plane_sky3/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/tuneavideo/plane_sky3/with/eagle_forest.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Eagle + <i style="font-family: sans-serif; font-weight: bold;">M</i> + Above Trees
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video
+              </div>
+            <img src="static/gifs/tuneavideo/plane_sky3/without/eagle_forest.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Eagle + <i style="font-family: sans-serif; font-weight: bold;">M</i> + Above Trees
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/tuneavideo/tiger/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/tuneavideo/tiger/with/lion_bamboo.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Lion + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In A Bamboo Grove
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video
+              </div>
+            <img src="static/gifs/tuneavideo/tiger/without/lion_bamboo.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Lion + <i style="font-family: sans-serif; font-weight: bold;">M</i> + In A Bamboo Grove
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 48%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/tuneavideo/swan/input.gif" width="280">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/tuneavideo/swan/with/flamingo.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Flamingo + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Tune-A-Video
+              </div>
+            <img src="static/gifs/tuneavideo/swan/without/swan.gif" width="280">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Flamingo + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+<div id="results" style='background-color: rgb(250, 250, 255)'>
+  <br><br>
+  <h2 class="tldr" style="font-size: 28px;">5. Comparison within ControlVideo</h2>
+  <!-- <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3> -->
+  <div>
+    <!-- <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2> -->
+    <table style="width: 56%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/controlvideo/cat_flower/input.gif" width="260">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/controlvideo/cat_flower/depth.gif" width="260">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Depth Condition
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/controlvideo/cat_flower/with/white_lawn.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              White Puppy + <i style="font-family: sans-serif; font-weight: bold;">M</i> <br> + On The Lawn
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo
+              </div>
+            <img src="static/gifs/controlvideo/cat_flower/without/white_lawn.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              White Puppy + <i style="font-family: sans-serif; font-weight: bold;">M</i> <br> + On The Lawn
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 56%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/controlvideo/squirrel_carrot/input.gif" width="260">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/controlvideo/squirrel_carrot/depth.gif" width="260">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Depth Condition
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/controlvideo/squirrel_carrot/with/fox_sausage_desert.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Fennec Fox + <i style="font-family: sans-serif; font-weight: bold;">M</i> <br> + Sausage, In Desert
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo
+              </div>
+            <img src="static/gifs/controlvideo/squirrel_carrot/without/fox_sausage_desert.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Fennec Fox + <i style="font-family: sans-serif; font-weight: bold;">M</i> <br> + Sausage, In Desert
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 56%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/controlvideo/dog_sitting/input.gif" width="260">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video of Motion <i style="font-family: sans-serif; font-weight: bold;">M</i>
+              </div>
+          </th>
+          <th>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              &nbsp;
+              </div>
+            <img src="static/gifs/controlvideo/dog_sitting/depth.gif" width="260">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Depth Condition
+              </div>
+          </th>
+          
+          <th>&nbsp;&nbsp;</th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo with <font color="Crimson">S</font><font color="FireBrick">M</font><font color="DarkRed">A</font>
+              </div>
+            <img src="static/gifs/controlvideo/dog_sitting/with/fox.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Fox + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo
+              </div>
+            <img src="static/gifs/controlvideo/dog_sitting/without/fox.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Fox + <i style="font-family: sans-serif; font-weight: bold;">M</i>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+<!-- Paper poster 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+End paper poster -->
+
+  <hr style="width: 100%;  margin: auto;"><br>
+  <h2 class="tldr" style="font-size: 20px;">References</h2>
+  <div style="padding-left:340px;">
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Zhao, Rui, et al. "<u>Motiondirector</u>: Motion customization of text-to-video diffusion models." arXiv preprint arXiv:2310.08465 (2023).
+  </P>
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Jeong, Hyeonho, et al. "<u>VMC</u>: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models." arXiv preprint arXiv:2312.00845 (2023).
+  </P>
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Wu, Jay Zhangjie, et al. "<u>Tune-a-video</u>: One-shot tuning of image diffusion models for text-to-video generation." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.
+  </P>
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Zhao, Min, et al. "<u>Controlvideo</u>: Adding conditional control for one shot text-to-video editing." arXiv preprint arXiv:2305.17098 (2023).
+  </P>
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Sterling, Spencer. <u>Zeroscope</u>. <a href="https://huggingface.co/cerspense/zeroscope_v2_576w"><i>https://huggingface.co/cerspense/zeroscope_v2_576w</i></a> (2023).
+  </P>
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Zhang, David Junhao, et al. "<u>Show-1</u>: Marrying pixel and latent diffusion models for text-to-video generation." arXiv preprint arXiv:2309.15818 (2023).
+  </P>
+  </div>
+  <br>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/vinthony/project-page-template">modification version</a> of 
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> 
+            from <a href="https://github.com/vinthony">vinthony</a>, licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+
+  </html>
