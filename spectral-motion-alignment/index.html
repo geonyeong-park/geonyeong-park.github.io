@@ -1308,11 +1308,62 @@
 
 
 <div id="results" style='background-color: rgb(255, 255, 255)'>
+  <br><br>
+  <h2 class="tldr" style="font-size: 22px;">Ablation of Global and Local Motion Alignment</h2>
   <br>
-  <h2 class="tldr" style="font-size: 22px;">Ablation of $\ell_{\text{global}}$</h2>
   <!-- <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3> -->
   <div>
     <!-- <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2> -->
+    <table style="width: 68%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Input Video
+            </div>
+            <img src="static/gifs/demo/man_skate/input.gif" width="320">
+
+              <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                A man is skating.
+              </div>
+          </th>
+          
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC (Show-1)
+              </div>
+              <img src="static/gifs/ablation/man_skate/without.gif" width="320">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              An <u>astronaut</u> is skating <u>on the dune</u>.
+            </div>
+          </th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC( Show-1) + $\ell_{\text{local}}$
+              </div>
+              <img src="static/gifs/ablation/man_skate/with_local.gif" width="320">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              An <u>astronaut</u> is skating <u>on the dune</u>.
+            </div>
+          </th>
+
+          <th>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              VMC (Show-1) + $\ell_{\text{local}}$ + $\ell_{\text{global}}$
+              </div>
+              <img src="static/gifs/ablation/man_skate/with_local_global.gif" width="320">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              An <u>astronaut</u> is skating <u>on the dune</u>.
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table><br>
+
     <table style="width: 54%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -1328,22 +1379,23 @@
           </th>
           
           <th>&nbsp;&nbsp;</th>
-
+          
           <th>
             <div style="font-family: sans-serif; font-weight: bold;">
-              Output Video with $\ell_{\text{global}}$
+              VMC (Show-1) + $\ell_{\text{local}}$
               </div>
-              <img src="static/gifs/ablation/rabbit_strawberry/with.gif" width="360">
+              <img src="static/gifs/ablation/rabbit_strawberry/without.gif" width="360">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
               A <u>hamster</u> is eating strawberries.
             </div>
           </th>
+
           <th>
             <div style="font-family: sans-serif; font-weight: bold;">
-              Output Video without $\ell_{\text{global}}$
+              VMC (Show-1) + $\ell_{\text{local}}$ + $\ell_{\text{global}}$
               </div>
-              <img src="static/gifs/ablation/rabbit_strawberry/without.gif" width="360">
+              <img src="static/gifs/ablation/rabbit_strawberry/with.gif" width="360">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
               A <u>hamster</u> is eating strawberries.
@@ -1371,19 +1423,20 @@
 
           <th>
             <div style="font-family: sans-serif; font-weight: bold;">
-              Output Video with $\ell_{\text{global}}$
+              VMC (Zeroscope) + $\ell_{\text{local}}$
               </div>
-              <img src="static/gifs/ablation/car_turn/with.gif" width="360">
+              <img src="static/gifs/ablation/car_turn/without.gif" width="360">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
               A <u>schoolbus</u> is driving on the <u>grass</u>.
             </div>
           </th>
+
           <th>
             <div style="font-family: sans-serif; font-weight: bold;">
-              Output Video without $\ell_{\text{global}}$
+              VMC (Zeroscope) + $\ell_{\text{local}}$ + $\ell_{\text{global}}$
               </div>
-              <img src="static/gifs/ablation/car_turn/without.gif" width="360">
+              <img src="static/gifs/ablation/car_turn/with.gif" width="360">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
               A <u>schoolbus</u> is driving on the <u>grass</u>.
@@ -1395,6 +1448,8 @@
     <br><br>
   </div>
 </div>
+
+
 
 
   <hr style="width: 100%;  margin: auto;"><br>
