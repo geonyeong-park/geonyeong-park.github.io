@@ -1,8 +1,8 @@
 # Basic Information 
-title: Your Name
+title: Geon Yeong Park
 position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+affiliation: KAIST
+email: pky3436 (at) kaist.ac.kr
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
@@ -12,17 +12,17 @@ canonical: https://minimal-light-theme.yliu.me/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+# linkedin: https://www.linkedin.com/
+# cv_link: assets/files/curriculum_vitae.pdf
+google_scholar: https://scholar.google.com/citations?user=HGF4a14AAAAJ&hl=ko
+github_link: https://github.com/geonyeong-park
+twitter: https://twitter.com/geonyeong_park
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+avatar: ./assets/img/avatar_.jpg
+favicon: ./assets/img/aibrain_icon.png
+favicon_dark: ./assets/img/aibrain_icon.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."

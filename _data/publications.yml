@@ -1,22 +1,103 @@
 main:
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
+  - title: "Spectral Motion Alignment for Video Motion Transfer using Diffusion Models"
+    authors: <strong>Geon Yeong Park*</strong>, Hyeonho Jeong*, Sang Wan Lee, Jong Chul Ye
+    conference: preprint, 2024 (To appear).
+    image: ./assets/img/preprint_SMA.gif
+
+  - title: "DreamMakeup: Face Makeup Customization using Latent Diffusion Models"
+    authors: <strong>Geon Yeong Park*</strong>, Inhwa Han*, Serin Yang*, Seongmin Jeong, Heechan Jeon, Myeongjin Goh, Sung Won Yi, Jin Nam, Jong Chul Ye
+    conference: preprint, 2024 (To appear).
+    page: https://dreammakeup.github.io/
+    image: ./assets/img/preprint_dreammakeup_.png
+
+  - title: "DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation"
+    authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Jong Chul Ye
+    conference: preprint, 2024.
+    pdf: https://arxiv.org/pdf/2403.11415.pdf
+    image: ./assets/img/preprint_dreamsampler.png
+
+  - title: "DreamMotion: Space-Time Self-Similarity Score Distillation for Zero-Shot Video Editing"
+    authors: Hyeonho Jeong, Jinho Chang, <strong>Geon Yeong Park</strong>, Jong Chul Ye
+    conference: preprint, 2024.
+    pdf: https://arxiv.org/pdf/2403.12002.pdf
+    page: https://hyeonho99.github.io/dreammotion/
+    image: ./assets/img/preprint_dreammotion.gif
+
+  - title: "Regularization by Texts for Latent Diffusion Inverse Solvers"
+    authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyungjin Chung, Jong Chul Ye
+    conference: preprint, 2024.
+    pdf: https://arxiv.org/pdf/2311.15658.pdf
+    page: https://treg-inverse.github.io/treg-inverse/
+    image: ./assets/img/preprint_treg.png
+
+  - title: "VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models"
+    authors: Hyeonho Jeong*, <strong>Geon Yeong Park*</strong>, Jong Chul Ye
     conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024.
+    pdf: https://video-motion-customization.github.io/static/video-motion-customization(vmc)-arxiv.pdf
+    code: https://github.com/HyeonHo99/Video-Motion-Customization
+    page: https://video-motion-customization.github.io/
+    data: https://drive.google.com/drive/folders/1GUDnosOkYQ50-1bHHIBitRMeamkd2qao
+    image: ./assets/img/CVPR_VMC.gif
+
+  - title: "Contrastive Denoising Score for Text-guided Latent Diffusion Image Editing"
+    authors: Hyelin Nam, Gihyun Kwon, <strong>Geon Yeong Park</strong>, Jong Chul Ye
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024.
+    pdf: https://arxiv.org/pdf/2311.18608.pdf
+    code: https://github.com/HyelinNAM/ContrastiveDenoisingScore
+    page: https://hyelinnam.github.io/CDS/
+    image: ./assets/img/CVPR_CDS.png
+
+  - title: "Self-supervised debiasing using low rank regularization"
+    authors: <strong>Geon Yeong Park</strong>, Chanyong Jung, Sangmin Lee, Jong Chul Ye, Sang Wan Lee
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024.
+    pdf: https://arxiv.org/pdf/2210.05248.pdf
+    code: https://github.com/geonyeong-park/Low-rank-regularization
+    image: ./assets/img/CVPR_rankreg.png
+
+  - title: "Energy-Based Cross Attention for Bayesian Context Update in Text-to-Image Diffusion Models"
+    authors: <strong>Geon Yeong Park*</strong>, Jeongsol Kim*, Beomsu Kim, Sang Wan Lee, Jong Chul Ye
+    conference_short: NeurIPS
+    conference: Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2306.09869.pdf
+    code: https://github.com/EnergyAttention/Energy-Based-CrossAttention
+    image: ./assets/img/NeurIPS_EBCA_.png
+    notes: Bronze, 30th Samsung Humantech Paper Award
+  
+  - title: "Training Debiased Subnetworks with Contrastive Weight Pruning"
+    authors: <strong>Geon Yeong Park</strong>, Sangmin Lee, Sang Wan Lee, Jong Chul Ye
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2210.05247.pdf
+    code: https://github.com/geonyeong-park/DCWP
+    slides: https://www.slideshare.net/ssuserf6f0a0/dcwpcvpr2023pptx-256490941
+    image: ./assets/img/CVPR_DCWP.png
+
+  - title: "Reliably fast adversarial training via latent adversarial perturbation"
+    authors: <strong>Geon Yeong Park</strong>, Sang Wan Lee
+    conference: IEEE/CVF Conference on Computer Vision <strong>(ICCV)</strong>, 2021.
+    conference_short: ICCV
+    pdf: https://arxiv.org/pdf/2104.01575.pdf
+    code: https://github.com/geonyeong-park/SLAT
+    image: ./assets/img/ICCV_SLAT.png
     notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+
+  - title: "Information-theoretic regularization for Multi-source Domain Adaptation"
+    authors: <strong>Geon Yeong Park</strong>, Sang Wan Lee
+    conference: IEEE/CVF Conference on Computer Vision <strong>(ICCV)</strong>, 2021.
+    conference_short: ICCV
+    pdf: https://arxiv.org/pdf/2104.01568.pdf
+    code: https://github.com/geonyeong-park/MIAN
+    image: ./assets/img/ICCV_MIAN.png
+
+  - title: "Task complexity interacts with state-space uncertainty in the arbitration between model-based and model-free learning"
+    authors: Dongjae Kim, <strong>Geon Yeong Park</strong>, John P. O′Doherty, Sang Wan Lee
+    conference: <strong>Nature Communications</strong>, 2019
+    conference_short: Nat. Commun.
+    pdf: https://www.nature.com/articles/s41467-019-13632-1
+    news: https://news.sbs.co.kr/news/endPage.do?news_id=N1005575707
+    image: ./assets/img/nature_arb.png
