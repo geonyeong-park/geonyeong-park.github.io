@@ -1,10 +1,20 @@
 main:
 
+  - title: "CFG++: Manifold-constrained Classifier Free Guidance For Diffusion Models"
+    authors: Hyungjin Chung*, Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyelin Nam*, Jong Chul Ye
+    conference: preprint, 2024.
+    image: ./assets/img/preprint_cfg++.png
+    pdf: https://arxiv.org/pdf/2406.08070v1
+    page: https://cfgpp-diffusion.github.io/
+    code: https://github.com/CFGpp-diffusion/CFGpp
 
   - title: "Spectral Motion Alignment for Video Motion Transfer using Diffusion Models"
     authors: <strong>Geon Yeong Park*</strong>, Hyeonho Jeong*, Sang Wan Lee, Jong Chul Ye
-    conference: preprint, 2024 (To appear).
+    conference: preprint, 2024.
     image: ./assets/img/preprint_SMA.gif
+    pdf: https://arxiv.org/pdf/2403.15249
+    page: https://geonyeong-park.github.io/spectral-motion-alignment/
+    code: https://github.com/geonyeong-park/Spectral-Motion-Alignment
 
   - title: "DreamMakeup: Face Makeup Customization using Latent Diffusion Models"
     authors: <strong>Geon Yeong Park*</strong>, Inhwa Han*, Serin Yang*, Seongmin Jeong, Heechan Jeon, Myeongjin Goh, Sung Won Yi, Jin Nam, Jong Chul Ye
