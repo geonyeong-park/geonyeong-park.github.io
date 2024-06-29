@@ -4,14 +4,15 @@ layout: homepage
 
 ## About Me
 
-I am a third-year Ph.D. student in Bio and Brain Engineering (BBE) at KAIST, with a strong desire to become a tech-based leader in AI. Fortunately co-advised by Prof. [Jong Chul Ye](https://bispl.weebly.com/) and Prof. [Sang Wan Lee](https://aibrain.kaist.ac.kr/). Completed M.S. in BBE at KAIST, advised by Prof. Sang Wan Lee. I am especially interested in bridging the gap between human perception and AI models, primarily focusing on improving AI generalization. In particular, my recent research focuses on (**1**) developing **adaptation** algorithms that distill and compose essential prior knowledge from foundational models, (**2**) ensuring **fairness & robustness** in the face of distribution shifts, and (**3**) refining the **alignment** across multiple modalities in generative models.
+I am a third-year Ph.D. student in Bio and Brain Engineering (BBE) at KAIST, with a strong desire to become a tech-based leader in AI. Fortunately co-advised by Prof. [Jong Chul Ye](https://bispl.weebly.com/) and Prof. [Sang Wan Lee](https://aibrain.kaist.ac.kr/). Completed M.S. in BBE at KAIST, advised by Prof. Sang Wan Lee.
+
+I am especially interested in (**a**) improving the learning of representations, and (**b**) leveraging these intermediate representations for controlling AI systems. My recent research focuses on controlling the diffusion generative process by exploiting latent representations or denoised estimates, with the goal of improving the conditional diffusion sampling and multi-modal alignment. Additionally, I am interested in developing robust representations to handle various distribution shifts.
 
 ## Research Interests
 
 - **Generative models:** Diffusion models and their applications. (Editing, Inverse imaging, etc)
 - **Multi-modal learning:** Text, Image, Video, 3D, etc.
-- **Attention mechanism:** Modern transformer and its connection to associative memory models.
-- **Fair & robust learning:** Adversarial vulnerability, Debiasing, Transfer learning.
+- **Robust representation learning:** Adversarial vulnerability, Debiasing, Transfer learning.
 
 ## News
 
