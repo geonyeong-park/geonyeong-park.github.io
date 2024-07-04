@@ -22,25 +22,27 @@ main:
     page: https://dreammakeup.github.io/
     image: ./assets/img/preprint_dreammakeup_.png
 
-  - title: "DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation"
-    authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Jong Chul Ye
-    conference: preprint, 2024.
-    pdf: https://arxiv.org/pdf/2403.11415.pdf
-    image: ./assets/img/preprint_dreamsampler.png
-
-  - title: "DreamMotion: Space-Time Self-Similarity Score Distillation for Zero-Shot Video Editing"
-    authors: Hyeonho Jeong, Jinho Chang, <strong>Geon Yeong Park</strong>, Jong Chul Ye
-    conference: preprint, 2024.
-    pdf: https://arxiv.org/pdf/2403.12002.pdf
-    page: https://hyeonho99.github.io/dreammotion/
-    image: ./assets/img/preprint_dreammotion.gif
-
   - title: "Regularization by Texts for Latent Diffusion Inverse Solvers"
     authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyungjin Chung, Jong Chul Ye
     conference: preprint, 2024.
     pdf: https://arxiv.org/pdf/2311.15658.pdf
     page: https://treg-inverse.github.io/treg-inverse/
     image: ./assets/img/preprint_treg.png
+
+  - title: "DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation"
+    authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Jong Chul Ye
+    conference: The European Conference on Computer Vision <strong>(ECCV)</strong>, 2024
+    conference_short: ECCV
+    pdf: https://arxiv.org/pdf/2403.11415.pdf
+    image: ./assets/img/preprint_dreamsampler.png
+
+  - title: "DreamMotion: Space-Time Self-Similarity Score Distillation for Zero-Shot Video Editing"
+    authors: Hyeonho Jeong, Jinho Chang, <strong>Geon Yeong Park</strong>, Jong Chul Ye
+    conference: The European Conference on Computer Vision <strong>(ECCV)</strong>, 2024
+    conference_short: ECCV
+    pdf: https://arxiv.org/pdf/2403.12002.pdf
+    page: https://hyeonho99.github.io/dreammotion/
+    image: ./assets/img/preprint_dreammotion.gif
 
   - title: "VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models"
     authors: Hyeonho Jeong*, <strong>Geon Yeong Park*</strong>, Jong Chul Ye

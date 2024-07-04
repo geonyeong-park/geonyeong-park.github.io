@@ -16,6 +16,7 @@ I am especially interested in (**a**) improving the learning of representations,
 
 ## News
 
+- **[Jul. 2024]** Two papers ([Dreamsampler](https://arxiv.org/abs/2403.11415), [DreamMotion](https://arxiv.org/abs/2403.12002)) accepted at ECCV 2024.
 - **[Jun. 2024]** [CFG++](https://arxiv.org/abs/2406.08070v1) is available on arxiv. A simple fix to CFG that enables lower guidance scales, improves sample quality and invertibility.
 - **[Mar. 2024]** [Dreamsampler](https://arxiv.org/abs/2403.11415), [DreamMotion](https://arxiv.org/abs/2403.12002), [Treg](https://arxiv.org/abs/2311.15658) is available on arxiv.
 - **[Mar. 2024]** Three papers ([Self-supervised debiasing](https://arxiv.org/abs/2210.05248), [VMC](https://video-motion-customization.github.io/), [CDS](https://hyelinnam.github.io/CDS/)) accepted at CVPR 2024.
