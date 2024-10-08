@@ -1,5 +1,13 @@
 main:
 
+  - title: "VideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide"
+    authors: Dohun Lee*, Bryan S Kim*, <strong>Geon Yeong Park</strong>, Jong Chul Ye
+    conference: preprint, 2024.
+    image: ./assets/img/videoguide.gif
+    pdf: https://arxiv.org/abs/2410.04364
+    page: https://dohunlee1.github.io/videoguide.github.io/
+    code: https://github.com/DoHunLee1/VideoGuide
+
   - title: "CFG++: Manifold-constrained Classifier Free Guidance For Diffusion Models"
     authors: Hyungjin Chung*, Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyelin Nam*, Jong Chul Ye
     conference: preprint, 2024.
