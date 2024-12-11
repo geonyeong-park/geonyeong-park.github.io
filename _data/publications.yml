@@ -16,13 +16,12 @@ main:
     page: https://cfgpp-diffusion.github.io/
     code: https://github.com/CFGpp-diffusion/CFGpp
 
-  - title: "Spectral Motion Alignment for Video Motion Transfer using Diffusion Models"
-    authors: <strong>Geon Yeong Park*</strong>, Hyeonho Jeong*, Sang Wan Lee, Jong Chul Ye
+  - title: "Regularization by Texts for Latent Diffusion Inverse Solvers"
+    authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyungjin Chung, Jong Chul Ye
     conference: preprint, 2024.
-    image: ./assets/img/preprint_SMA.gif
-    pdf: https://arxiv.org/pdf/2403.15249
-    page: https://geonyeong-park.github.io/spectral-motion-alignment/
-    code: https://github.com/geonyeong-park/Spectral-Motion-Alignment
+    pdf: https://arxiv.org/pdf/2311.15658.pdf
+    page: https://treg-inverse.github.io/treg-inverse/
+    image: ./assets/img/preprint_treg.png
 
   - title: "DreamMakeup: Face Makeup Customization using Latent Diffusion Models"
     authors: <strong>Geon Yeong Park*</strong>, Inhwa Han*, Serin Yang*, Seongmin Jeong, Heechan Jeon, Myeongjin Goh, Sung Won Yi, Jin Nam, Jong Chul Ye
@@ -30,12 +29,14 @@ main:
     page: https://dreammakeup.github.io/
     image: ./assets/img/preprint_dreammakeup_.png
 
-  - title: "Regularization by Texts for Latent Diffusion Inverse Solvers"
-    authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyungjin Chung, Jong Chul Ye
-    conference: preprint, 2024.
-    pdf: https://arxiv.org/pdf/2311.15658.pdf
-    page: https://treg-inverse.github.io/treg-inverse/
-    image: ./assets/img/preprint_treg.png
+  - title: "Spectral Motion Alignment for Video Motion Transfer using Diffusion Models"
+    authors: <strong>Geon Yeong Park*</strong>, Hyeonho Jeong*, Sang Wan Lee, Jong Chul Ye
+    conference: AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025
+    conference_short: AAAI
+    image: ./assets/img/preprint_SMA.gif
+    pdf: https://arxiv.org/pdf/2403.15249
+    page: https://geonyeong-park.github.io/spectral-motion-alignment/
+    code: https://github.com/geonyeong-park/Spectral-Motion-Alignment
 
   - title: "DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation"
     authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Jong Chul Ye
