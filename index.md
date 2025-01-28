@@ -16,6 +16,9 @@ I am especially interested in (**a**) improving the learning of representations,
 
 ## News
 
+- **[Jan. 2025]** Two papers ([CFG++](https://cfgpp-diffusion.github.io/), [TReg](https://arxiv.org/abs/2311.15658)) accepted at ICLR 2025.
+- **[Jan. 2025]** DreamMakeup wins [2025 CES Innovation Awards](https://www.ces.tech/ces-innovation-awards/2025/wanna-beauty-ai-virtual-makeup-powered-by-generative-ai/) (co-worked with [AmorePacific](https://stories.amorepacific.com/en/amorepacific-named-ces-2025-innovation-award-honoree/))
+- **[Jan. 2025]** [CFG++](https://cfgpp-diffusion.github.io/) receives 31st Samsung Humantech Paper Award (2nd in Signal Processing)
 - **[Dec. 2024]** I will join [Meta Reality Labs Research](https://about.meta.com/realitylabs/) in London as a Research Scientist Intern in 2025 summer (Mentor: Dr. Thu Nguyen-Phuoc)
 - **[Dec. 2024]** One paper ([SMA](https://geonyeong-park.github.io/spectral-motion-alignment/)) accepted at AAAI 2025.
 - **[Nov. 2024]** [VMC](https://video-motion-customization.github.io/) is presented as an oral presentation at [KCCV 2024](https://kcvs.kr/?act=info.workshop&pseq=7), and wins finalist award at [Qualcomm Innovation Fellowship Award 2024](https://www.qualcomm.com/research/university-relations/innovation-fellowship/2024-south-korea).

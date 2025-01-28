@@ -1,5 +1,12 @@
 main:
 
+  - title: "Inference-Time Diffusion Model Distillation"
+    authors: <strong>Geon Yeong Park</strong>, Sang Wan Lee, Jong Chul Ye
+    conference: preprint, 2024.
+    image: ./assets/img/distillation_pp.png
+    pdf: https://arxiv.org/abs/2412.08871
+    code: https://github.com/geonyeong-park/inference_distillation
+
   - title: "VideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide"
     authors: Dohun Lee*, Bryan S Kim*, <strong>Geon Yeong Park</strong>, Jong Chul Ye
     conference: preprint, 2024.
@@ -10,15 +17,18 @@ main:
 
   - title: "CFG++: Manifold-constrained Classifier Free Guidance For Diffusion Models"
     authors: Hyungjin Chung*, Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyelin Nam*, Jong Chul Ye
-    conference: preprint, 2024.
+    conference: International Conference on Learning Representations <strong>(ICLR)</strong>, 2025
+    conference_short: ICLR
     image: ./assets/img/preprint_cfg++.png
     pdf: https://arxiv.org/pdf/2406.08070v1
     page: https://cfgpp-diffusion.github.io/
     code: https://github.com/CFGpp-diffusion/CFGpp
+    notes: Silver, 31st Samsung Humantech Paper Award
 
   - title: "Regularization by Texts for Latent Diffusion Inverse Solvers"
     authors: Jeongsol Kim*, <strong>Geon Yeong Park*</strong>, Hyungjin Chung, Jong Chul Ye
-    conference: preprint, 2024.
+    conference: International Conference on Learning Representations <strong>(ICLR)</strong>, 2025
+    conference_short: ICLR
     pdf: https://arxiv.org/pdf/2311.15658.pdf
     page: https://treg-inverse.github.io/treg-inverse/
     image: ./assets/img/preprint_treg.png
@@ -28,6 +38,8 @@ main:
     conference: preprint, 2024 (To appear).
     page: https://dreammakeup.github.io/
     image: ./assets/img/preprint_dreammakeup_.png
+    notes: Honoree, CES Innovation Awards 2025
+    news: https://www.ces.tech/ces-innovation-awards/2025/wanna-beauty-ai-virtual-makeup-powered-by-generative-ai/
 
   - title: "Spectral Motion Alignment for Video Motion Transfer using Diffusion Models"
     authors: <strong>Geon Yeong Park*</strong>, Hyeonho Jeong*, Sang Wan Lee, Jong Chul Ye
