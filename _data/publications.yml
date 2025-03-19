@@ -9,7 +9,8 @@ main:
 
   - title: "VideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide"
     authors: Dohun Lee*, Bryan S Kim*, <strong>Geon Yeong Park</strong>, Jong Chul Ye
-    conference: preprint, 2024.
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2025.
     image: ./assets/img/videoguide.gif
     pdf: https://arxiv.org/abs/2410.04364
     page: https://dohunlee1.github.io/videoguide.github.io/
@@ -32,6 +33,7 @@ main:
     pdf: https://arxiv.org/pdf/2311.15658.pdf
     page: https://treg-inverse.github.io/treg-inverse/
     image: ./assets/img/preprint_treg.png
+    notes: Spotlight
 
   - title: "DreamMakeup: Face Makeup Customization using Latent Diffusion Models"
     authors: <strong>Geon Yeong Park*</strong>, Inhwa Han*, Serin Yang*, Seongmin Jeong, Heechan Jeon, Myeongjin Goh, Sung Won Yi, Jin Nam, Jong Chul Ye

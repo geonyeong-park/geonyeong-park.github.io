@@ -16,6 +16,8 @@ I am especially interested in (**a**) improving the learning of representations,
 
 ## News
 
+- **[Feb. 2025]** One paper ([VideoGuide](https://dohunlee1.github.io/videoguide.github.io/)) accepted at CVPR 2025.
+- **[Feb. 2025]** [TReg](https://arxiv.org/abs/2311.15658) is selected as a spotlight paper in ICLR 2025.
 - **[Jan. 2025]** Two papers ([CFG++](https://cfgpp-diffusion.github.io/), [TReg](https://arxiv.org/abs/2311.15658)) accepted at ICLR 2025.
 - **[Jan. 2025]** DreamMakeup wins [2025 CES Innovation Awards](https://www.ces.tech/ces-innovation-awards/2025/wanna-beauty-ai-virtual-makeup-powered-by-generative-ai/) (co-worked with [AmorePacific](https://www.apgroup.com/int/en/index.html))
 - **[Jan. 2025]** [CFG++](https://cfgpp-diffusion.github.io/) receives 31st Samsung Humantech Paper Award (2nd in Signal Processing)
