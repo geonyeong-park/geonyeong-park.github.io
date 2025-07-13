@@ -2,7 +2,8 @@ main:
 
   - title: "Inference-Time Diffusion Model Distillation"
     authors: <strong>Geon Yeong Park</strong>, Sang Wan Lee, Jong Chul Ye
-    conference: preprint, 2024.
+    conference: IEEE/CVF Conference on Computer Vision <strong>(ICCV)</strong>, 2025.
+    conference_short: ICCV
     image: ./assets/img/distillation_pp.png
     pdf: https://arxiv.org/abs/2412.08871
     code: https://github.com/geonyeong-park/inference_distillation
