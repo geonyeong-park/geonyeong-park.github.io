@@ -37,8 +37,9 @@ main:
     notes: Spotlight
 
   - title: "DreamMakeup: Face Makeup Customization using Latent Diffusion Models"
-    authors: <strong>Geon Yeong Park*</strong>, Inhwa Han*, Serin Yang*, Seongmin Jeong, Heechan Jeon, Myeongjin Goh, Sung Won Yi, Jin Nam, Jong Chul Ye
-    conference: preprint, 2024 (To appear).
+    authors: <strong>Geon Yeong Park*</strong>, Inhwa Han*, Serin Yang*, Yeobin Hong*, Seongmin Jeong, Heechan Jeon, Myeongjin Goh, Sung Won Yi, Jin Nam, Jong Chul Ye
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026
+    conference_short: WACV
     page: https://dreammakeup.github.io/
     image: ./assets/img/preprint_dreammakeup_.png
     notes: Honoree, CES Innovation Awards 2025
