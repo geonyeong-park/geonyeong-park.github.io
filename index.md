@@ -4,12 +4,13 @@ layout: homepage
 
 ## About Me
 
-I am a final-year Ph.D. student in Bio and Brain Engineering (BBE) at KAIST, co-advised by Prof. [Jong Chul Ye](https://bispl.weebly.com/) and Prof. [Sang Wan Lee](https://aibrain.kaist.ac.kr/). I recently worked as a Research Scientist Intern at [Meta Reality Labs](https://tech.facebook.com/reality-labs/) (London) in the 2025 summer.
+I am a Postdoctoral researcher at KAIST, advised by Prof. [Jong Chul Ye](https://bispl.weebly.com/). I recently worked as a Research Scientist Intern at [Meta Reality Labs](https://tech.facebook.com/reality-labs/) (London) in the 2025 summer. During my postdoc, I’ll be working on world models with [Jin-Hwa Kim](https://wityworks.com/) at [NAVER AI Lab](https://naver-career.gitbook.io/en/teams/naver-ai-lab).
 
-My research focuses on controllable generative models, particularly diffusion models. I am especially interested in a universal Diffusion-X framework: (a) distills foundational knowledge from pre-trained diffusion models to downstream tasks (DM&rarr;X) and (b) enables interpretable, reliable, and versatile posterior sampling (X&rarr;DM).
+My research focuses on diffusion models and their applications, including multi-modal generation, editing, and reconstruction. Recently, I have been exploring physically grounded world models.
 
 ## Experience
 
+- **KAIST**, Postdoctoral researcher (Mar 2026 - Feb 2027)
 - **Meta Reality Labs**, Research Intern (May 2025 - Oct 2025). Advised by [Thu Nguyen-Phuoc](https://www.linkedin.com/in/thu-nguyen-phuoc-0196ba18/?originalSubdomain=uk), [Andrea Vedaldi](https://www.robots.ox.ac.uk/~vedaldi/), [Roman Shapovalov](http://shapovalov.ro/)
 - **Promedius**, Research Intern (Mar 2021 - Sep 2021)
 - **Looxid Labs**, Research Intern (Sep 2018 - Jan 2019)
@@ -18,6 +19,7 @@ My research focuses on controllable generative models, particularly diffusion mo
 
 ## News
 
+- **[Feb. 2026]** One paper ([WorldGen](https://arxiv.org/abs/2511.16825)) accepted at CVPR 2026.
 - **[Nov. 2025]** One paper ([DreamMakeup](https://arxiv.org/abs/2510.10918)) accepted at WACV 2026.
 - **[Jun. 2025]** One paper ([Inference-time distillation](https://arxiv.org/abs/2412.08871)) accepted at ICCV 2025.
 - **[Feb. 2025]** One paper ([VideoGuide](https://dohunlee1.github.io/videoguide.github.io/)) accepted at CVPR 2025.

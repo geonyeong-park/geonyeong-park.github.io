@@ -1,5 +1,13 @@
 main:
 
+  - title: "WorldGen: From Text to Traversable and Interactive 3D Worlds"
+    authors: <strong>Meta 3D Gen Team</strong>
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
+    image: ./assets/img/worldgen.png
+    pdf: https://arxiv.org/pdf/2511.16825
+    news: https://www.meta.com/ko-kr/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/
+
   - title: "Inference-Time Diffusion Model Distillation"
     authors: <strong>Geon Yeong Park</strong>, Sang Wan Lee, Jong Chul Ye
     conference: IEEE/CVF Conference on Computer Vision <strong>(ICCV)</strong>, 2025.
