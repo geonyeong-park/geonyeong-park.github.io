@@ -1,5 +1,19 @@
 main:
 
+  - title: "MeshReGen: A Unified 3D Geometry Regeneration Framework"
+    authors: <strong>Geon Yeong Park</strong>, Roman Shapovalov, Rakesh Ranjan, Jong Chul Ye, Andrea Vedaldi, Thu Nguyen-Phuoc
+    conference: Preprint, 2026
+    image: ./assets/img/meshregen.gif
+    pdf: https://arxiv.org/abs/2604.28134
+    page: https://geonyeong-park.github.io/meshregen/
+
+  - title: "FlowLong: Inference-time Long Video Generation via Manifold-constrained Tweedie Matching"
+    authors: Jangho Park*, <strong>Geon Yeong Park*</strong>, Gihyun Kwon, Jong Chul Ye
+    conference: Preprint, 2026
+    image: ./assets/img/flowlong.gif
+    pdf: https://arxiv.org/abs/2605.20910
+    page: https://flowlong-video.github.io/
+
   - title: "WorldGen: From Text to Traversable and Interactive 3D Worlds"
     authors: <strong>Meta 3D Gen Team</strong>
     conference_short: CVPR
