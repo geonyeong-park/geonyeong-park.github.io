@@ -1,0 +1,18 @@
+current directory: /Users/geonyeong/Downloads/Geonyeong-park/geonyeong-park.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/geonyeong/Downloads/Geonyeong-park/geonyeong-park.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j12 DESTDIR\= sitearchdir\=./.gem.20260607-92550-a95kho sitelibdir\=./.gem.20260607-92550-a95kho clean
+
+current directory: /Users/geonyeong/Downloads/Geonyeong-park/geonyeong-park.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j12 DESTDIR\= sitearchdir\=./.gem.20260607-92550-a95kho sitelibdir\=./.gem.20260607-92550-a95kho
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/geonyeong/Downloads/Geonyeong-park/geonyeong-park.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j12 DESTDIR\= sitearchdir\=./.gem.20260607-92550-a95kho sitelibdir\=./.gem.20260607-92550-a95kho install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260607-92550-a95kho/racc
+
+current directory: /Users/geonyeong/Downloads/Geonyeong-park/geonyeong-park.github.io/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260607-92550-a95kho sitelibdir\=./.gem.20260607-92550-a95kho clean

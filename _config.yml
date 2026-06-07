@@ -57,6 +57,8 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+  - vendor/
+  - .bundle/
 
 url: https://geonyeong-park.github.io
 plugins:
